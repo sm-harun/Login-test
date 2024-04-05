@@ -1,0 +1,13 @@
+<form action="login" method="POST">
+        {% csrf_token %}
+        <p>Logging in: Please enter your username and password name:</p>
+        <input type="text" name="username" placeholder="username" required>
+        <input type="text" name="password" placeholder="password" required>
+        <button type="submit">Submit</button>  
+</form>
+
+<h1>Register Instead: </h1>
+
+<form action="register" method="GET">
+    <button type="submit">Register</button>  
+</form>
